@@ -2,7 +2,7 @@ module com.ttchoa22ite.population {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
-    requires mysql.connector.j;
+//    requires mysql.connector.j;
     requires jdk.javadoc;
     requires java.sql.rowset;
 

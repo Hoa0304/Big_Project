@@ -27,7 +27,7 @@ public class HomeController {
     @FXML
     void getResident(MouseEvent event) {
         try {
-            Parent parent = FXMLLoader.load(((getClass().getResource("resident.fxml"))));
+            Parent parent = FXMLLoader.load(((getClass().getResource(""))));
             Scene scene = new Scene(parent);
             Stage stage = new Stage();
             stage.setScene(scene);

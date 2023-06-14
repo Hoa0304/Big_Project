@@ -2,24 +2,18 @@ package com.ttchoa22ite.population.controllers.login;
 
 
 
-import com.ttchoa22ite.population.controllers.home.HomeController;
-import com.ttchoa22ite.population.controllers.home.ResidentController;
 import com.ttchoa22ite.population.utils.ConnectionDB;
 
-import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -84,11 +78,12 @@ public class LoginAdmin implements Initializable {
 
             } else {
 
-                String sql = "SELECT * FROM admin Where username = ? and password = ?";
+                String sql = "SELECT * FROM login Where username = ? and password = ?";
                 try {
                     preparedStatement = con.prepareStatement(sql);
                     preparedStatement.setString(1, username);
                     preparedStatement.setString(2, password);
+                    System.out.println(""+username);
                     resultSet = preparedStatement.executeQuery();
                     if (!resultSet.next()) {
                         setLblError(Color.TOMATO, "Nhập đúng Tên đăng nhập / Mật Khẩu");

@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ttchoa22ite.population.controllers.home.HomeController">
+<AnchorPane style="-fx-background-radius: 20;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ttchoa22ite.population.controllers.login.HomeController">
     <children>
         <AnchorPane prefHeight="616.0" prefWidth="993.0" style="-fx-background-color: #030307; -fx-background-radius: 15;">
             <children>
@@ -44,19 +44,11 @@
                                 </ImageView>
                             </graphic>
                         </Button>
-                        <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../../css/HomeStyling.css" text="Thống kê" textFill="#a868a0">
+                        <Button contentDisplay="TOP" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../../css/HomeStyling.css" text="Nhắn tin" textFill="#a868a0">
                             <graphic>
                                 <ImageView fitHeight="24.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../../icon/home/census.png" />
-                                    </image></ImageView>
-                            </graphic>
-                        </Button>
-                        <Button contentDisplay="TOP" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="74.0" styleClass="button3" stylesheets="@../../css/HomeStyling.css" text="Biểu đồ" textFill="#a868a0">
-                            <graphic>
-                                <ImageView fitHeight="34.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
-                                    <image>
-                                        <Image url="@../../icon/home/chart.png" />
+                                        <Image url="@../../icon/home/chat.png" />
                                     </image></ImageView>
                             </graphic>
                         </Button>
@@ -70,7 +62,7 @@
                         </Button>
                     </children>
                 </VBox>
-                <AnchorPane layoutX="91.0" layoutY="56.0" prefHeight="531.0" prefWidth="886.0" style="-fx-background-color: #131022; -fx-background-radius: 10;" stylesheets="@../../css/HomeStyling.css">
+                <AnchorPane layoutX="91.0" layoutY="56.0" prefHeight="531.0" prefWidth="886.0" style="-fx-background-color: #131022; -fx-background-radius: 10;">
                     <children>
                         <Label layoutX="34.0" layoutY="34.0" text="NHÂN HỘ KHẨU" textFill="WHITE">
                             <font>
@@ -110,13 +102,13 @@
                   <AnchorPane layoutX="34.0" layoutY="97.0" prefHeight="394.0" prefWidth="506.0" style="-fx-background-color: #1A172A; -fx-background-radius: 10;">
                      <children>
                         <Pane layoutX="19.0" layoutY="23.0" prefHeight="94.0" prefWidth="468.0" style="-fx-background-color: #2A2739; -fx-background-radius: 15;" />
-                        <Pane layoutX="19.0" layoutY="142.0" prefHeight="94.0" prefWidth="468.0" style="-fx-background-color: #2A2739; -fx-background-radius: 15;" />
+                        <Pane layoutX="19.0" layoutY="150.0" prefHeight="94.0" prefWidth="468.0" style="-fx-background-color: #2A2739; -fx-background-radius: 15;" />
                         <Pane layoutX="19.0" layoutY="274.0" prefHeight="94.0" prefWidth="468.0" style="-fx-background-color: #2A2739; -fx-background-radius: 15;" />
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="611.0" layoutY="320.0" prefHeight="86.0" prefWidth="200.0">
                      <children>
-                              <Button fx:id="permanan" contentDisplay="TOP" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#getResident" prefHeight="53.0" prefWidth="90.0" style="-fx-background-color: #131022;" styleClass="button3" stylesheets="@../../css/HomeStyling.css" text="Thường trú" textAlignment="RIGHT" textFill="#fff600">
+                              <Button fx:id="permanan" contentDisplay="TOP" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#getResident" prefHeight="53.0" prefWidth="90.0" style="-fx-background-color: #131022;" text="Thường trú" textAlignment="RIGHT" textFill="#fff600">
                                   <font>
                                       <Font size="14.0" />
                                   </font>
@@ -128,7 +120,7 @@
                                       </ImageView>
                                   </graphic>
                               </Button>
-                              <Button contentDisplay="TOP" layoutX="113.0" layoutY="8.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: #131022;" styleClass="button3" text="Tạm Trú" textFill="#fff600">
+                              <Button contentDisplay="TOP" layoutX="113.0" layoutY="8.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="82.0" style="-fx-background-color: #131022;" text="Tạm Trú" textFill="#fff600">
                                   <font>
                                       <Font size="14.0" />
                                   </font>

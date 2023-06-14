@@ -37,7 +37,7 @@
                 <TextField fx:id="txtUsername" layoutX="14.0" prefHeight="58.0" prefWidth="307.0" promptText="Tên đăng nhập" style="-fx-background-color: #131022; -fx-background-radius: 15;">
                     <font>
                         <Font size="22.0" />
-                    </font></TextField>
+                    </font></TextField>gbhdf
                 <PasswordField fx:id="txtPassword" layoutX="12.0" layoutY="73.0" prefHeight="58.0" prefWidth="307.0" promptText="Mật khẩu" style="-fx-background-color: #131022; -fx-background-radius: 15;">
                     <font>
                         <Font size="22.0" />

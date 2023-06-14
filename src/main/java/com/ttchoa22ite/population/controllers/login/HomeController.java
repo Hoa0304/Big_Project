@@ -1,11 +1,15 @@
-package com.ttchoa22ite.population.controllers.home;
+package com.ttchoa22ite.population.controllers.login;
 
+import com.ttchoa22ite.population.controllers.home.ResidentController;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -28,11 +32,13 @@ public class HomeController {
     void getResident(MouseEvent event) {
         try {
             Parent parent = FXMLLoader.load(((getClass().getResource("resident.fxml"))));
+            Stage primaryStage = new Stage();
+            primaryStage.initStyle(StageStyle.TRANSPARENT);
             Scene scene = new Scene(parent);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.initStyle(StageStyle.UTILITY);
-            stage.show();
+            //set transparent
+            scene.setFill(Color.TRANSPARENT);
+            primaryStage.setScene(scene);
+            primaryStage.show();
         } catch (IOException ex) {
             Logger.getLogger(ResidentController.class.getName()).log(Level.SEVERE, null, ex);
         }
